@@ -22,10 +22,10 @@ b = str2num(rgb{3});
 if r < 0 | r > 255
     error('red value must be between 0..255');
 end
-if r < 0 | r > 255
+if b < 0 | b > 255
     error('blue value must be between 0..255');
 end
-if r < 0 | r > 255
+if g < 0 | g > 255
     error('green value must be between 0..255');
 end
 fid = fopen(fullfile(savepth,[n '.clut']),'w');
